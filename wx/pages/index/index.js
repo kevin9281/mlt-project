@@ -1,21 +1,43 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+
 
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    hasUserInfo: false
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  getImg:function () {
+    wx.request({
+      url:"http://127.0.0.1:3001/imglist",
+      success:(res)=>{
+        console.log(res);
+        this.setData({list:res.data})
+      }
+    });
+    wx.request({
+      url:"http://127.0.0.1:3001/Floors",
+      success:(res)=>{
+        console.log(res);
+        this.setData({Floor:res.data})
+        // console.log(res.data[0].img_url)
+      }
+    });
+    wx.request({
+      url:"http://127.0.0.1:3001/slides",
+      success:(res)=>{
+        console.log(res);
+        this.setData({slide:res.data})
+      console.log(res)
+      }
+    });
   },
+
   onLoad: function () {
+    this.getImg();
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -50,5 +72,5 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
 })

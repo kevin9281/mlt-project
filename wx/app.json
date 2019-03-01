@@ -11,6 +11,7 @@
     "navigationBarBackgroundColor": "#EE7F26",
     "navigationBarTitleText": "漫骆驼",
     "navigationBarTextStyle": "black"
+
   },
   "tabBar": {
     "list": [

@@ -1,9 +1,19 @@
 <!--index.wxml-->
-<view class="cont">
-  <swiper  autoplay>
-    <swiper-item>
-      <image src="/wx/pages/img/big1.jpg"></image>
-      <image src="/wx/pages/img/big2.jpg"></image>
-    </swiper-item>
+<view class="container">
+<!-- 轮播图 -->
+<view class='slider'>
+  <swiper autoplay indicator-dots>
+    <swiper-item wx:for="{{list}}" wx:key="index">
+      <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+    </swiper-item> 
   </swiper>
+  </view>
+  <!-- 1L -->
+  <view class="1l">
+    <image class="Premium" src="{{Floor[0].img_url}}"></image>
+    <text class="worth">超值特价</text>
+    <button class="more" >查看更多</button>
+    <!-- 1L滑动效果 -->
+
+  </view>
 </view>

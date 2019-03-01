@@ -1,21 +1,38 @@
 /**index.wxss**/
-.userinfo {
+.slider,.slider swiper,.slider swiper image{
+  height: 300rpx;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column;  
+  /* column灵活的项目将垂直显示，正如一个列一样 */
+  /* align-items: center;  弹性盒子居中对齐*/
+  justify-content: space-between;
+  /*  space-between 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。各行之间留有空白的容器内 */
+  box-sizing: border-box;
+/* border-box为元素设定的宽度和高度决定了元素的边框盒。就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。 */
+  background-color:#EEEEEE;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.Premium{
+  margin-bottom:-10rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.worth{
+  color:#EE7F26;
+  font-size: 25rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.more{
+  border-radius: 0% !important;
+  padding-left:3px;
+  padding-right:5px;
+  height: 50rpx;
+  font-size: 25rpx;
+  color: #fff;
+  background: #EE7F26;
+  display:inline;
+  margin-left:480rpx;
 }
