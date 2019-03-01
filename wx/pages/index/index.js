@@ -4,24 +4,20 @@ const app = getApp();
 
 
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false
-  },
+  data: {},
   //事件处理函数
   getImg:function () {
     wx.request({
       url:"http://127.0.0.1:3001/imglist",
       success:(res)=>{
-        console.log(res);
+        //console.log(res);
         this.setData({list:res.data})
       }
     });
     wx.request({
       url:"http://127.0.0.1:3001/Floors",
       success:(res)=>{
-        console.log(res);
+        //console.log(res);
         this.setData({Floor:res.data})
         // console.log(res.data[0].img_url)
       }
@@ -29,7 +25,7 @@ Page({
     wx.request({
       url:"http://127.0.0.1:3001/slides",
       success:(res)=>{
-        console.log(res);
+        //console.log(res);
         this.setData({slide:res.data})
       console.log(res)
       }

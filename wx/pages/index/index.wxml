@@ -9,11 +9,18 @@
   </swiper>
   </view>
   <!-- 1L -->
-  <view class="1l">
+  <view class="l1l">
     <image class="Premium" src="{{Floor[0].img_url}}"></image>
     <text class="worth">超值特价</text>
     <button class="more" >查看更多</button>
     <!-- 1L滑动效果 -->
-
+    <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+      <!-- <view id="green" class="scroll-view-item_H bc_green"></view> -->
+      <view wx:for="{{slide}}" wx:key="index" class="scroll-item">
+        <image src="{{item.img_url}}"> </image>
+        <view class="tit">{{item.title}}</view>
+        <view class="price">{{item.price}}元</view>
+      </view>
+    </scroll-view>
   </view>
 </view>

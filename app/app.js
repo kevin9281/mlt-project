@@ -37,25 +37,25 @@ app.get("/Floors",(req,res)=>{
 app.get("/slides",(req,res)=>{
 	var slide = [
 		{
-			id:1,img_url:"http://127.0.0.1:3001/img/1.jpg"
+			id:1,img_url:"http://127.0.0.1:3001/img/1.jpg",title:'可伸缩电能光剑',price:'89.00'
 		},
 		{
-			id:2,img_url:"http://127.0.0.1:3001/img/2.jpg"
+			id:2,img_url:"http://127.0.0.1:3001/img/2.jpg",title:'万代 1/72 反抗军战机',price:'108.00'
 		},
 		{
-			id:3,img_url:"http://127.0.0.1:3001/img/3.jpg"
+			id:3,img_url:"http://127.0.0.1:3001/img/3.jpg",title:'万代 钛战机',price:'108.00'
 		},
 		{
-			id:4,img_url:"http://127.0.0.1:3001/img/4.jpg"
+			id:4,img_url:"http://127.0.0.1:3001/img/4.jpg",title:'反抗军战机模型',price:'239.00'
 		},
 		{
-			id:5,img_url:"http://127.0.0.1:3001/img/5.jpg"
+			id:5,img_url:"http://127.0.0.1:3001/img/5.jpg",title:'小大圣布偶',price:'55.00'
 		},
 		{
-			id:6,img_url:"http://127.0.0.1:3001/img/6.jpg"
+			id:6,img_url:"http://127.0.0.1:3001/img/6.jpg",title:'罗宾15周年抱枕',price:'73.00'
 		},
 		{
-			id:7,img_url:"http://127.0.0.1:3001/img/7.jpg"
+			id:7,img_url:"http://127.0.0.1:3001/img/7.jpg",title:'小黄人抱枕靠枕 午休必备',price:'199.00'
 		}
 	];
 	res.send(slide);
