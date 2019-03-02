@@ -27,7 +27,47 @@ Page({
       success:(res)=>{
         //console.log(res);
         this.setData({slide:res.data})
-      console.log(res)
+     // console.log(res)
+      }
+    });
+    wx.request({
+      url:"http://127.0.0.1:3001/times",
+      success:(res)=>{
+        //console.log(res);
+        this.setData({time:res.data})
+      //console.log(res)
+      }
+    });
+    wx.request({
+      url:"http://127.0.0.1:3001/worths",
+      success:(res)=>{
+        //console.log(res);
+        this.setData({worth:res.data})
+      //console.log(res)
+      }
+    });
+    wx.request({
+      url:"http://127.0.0.1:3001/Fillings",
+      success:(res)=>{
+        //console.log(res);
+        this.setData({Filling:res.data})
+      //console.log(res)
+      }
+    });
+    wx.request({
+      url:"http://127.0.0.1:3001/Kits",
+      success:(res)=>{
+        //console.log(res);
+        this.setData({Kit:res.data})
+      //console.log(res)
+      }
+    });
+    wx.request({
+      url:"http://127.0.0.1:3001/Garages",
+      success:(res)=>{
+        //console.log(res);
+        this.setData({Garage:res.data})
+      //console.log(res)
       }
     });
   },

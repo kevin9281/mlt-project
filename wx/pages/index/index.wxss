@@ -36,51 +36,82 @@
   display:inline;
   margin-left:480rpx;
 }
-.l1l{
+.ll{
   width: 100%;
   height: 100%;
 }
 /* 滚动1l */
 .scroll-view_H{
   width:100%;
-  height: 420rpx;
+  height: 330rpx;
   white-space: nowrap;
   margin-left: 20rpx;
   box-sizing: border-box;
+
 }
 .scroll-item{
   width: 35%;
-  height:85%;
+  height:320rpx;
   margin-left: 10rpx;
   box-sizing: border-box;
   display: inline-block;
   position: relative;
+  background: #fff;
 }
 .scroll-item image{
-  height: 75%;
   width: 100%;
-  top:100rpx;
+  height:250rpx;
+  position: absolute;
+
+
 }
 .tit{
   font-size: 20rpx;
   font-weight: 550;
+  font-family: '微软雅黑', Microsoft YaHei;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  margin-top: 225rpx;
+  margin-top: 260rpx;
   text-align: center;
 }
 .price{
   font-size: 20rpx;
   font-weight: 550;
+  font-family: '微软雅黑', Microsoft YaHei;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  margin-top: 250rpx;
+  margin-top: 290rpx;
   text-align: center;
   color: #EE7F26;
+}
+/* 2l */
+.Premium2{
+  width: 50rpx !important;
+  height: 40rpx !important;
+}
+.section{
+  flex-direction:row;
+  display: flex;
+  margin-left:20rpx;
+}
+.time-worth{
+  width: 340rpx;
+  height: 320rpx;
+  margin-left:10rpx;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+}
+.time-worth image{
+  width: 100%;
+  height: 270rpx;
+}
+.worths{
+  margin-top:15rpx;
 }
